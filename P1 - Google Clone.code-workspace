@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Developer Page"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "P1 - Google Clone"
+	}
+}
