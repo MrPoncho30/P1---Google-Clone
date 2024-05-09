@@ -6,17 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
-</head>
-<body> <!-- Aquí irá todo el contenido que el usuario podrá ver-->
-    <header>
-        <nav>
-            <ul class="nav-rigth-section">
-                <li><a href="">Gmail</a></li>
-                <li><a href="">Imágenes</a></li>
-                <li class="menu-icon"><a href=""></a></li>
-                <li><a href="">Photo</a></li>
-            </ul>
-        </nav>
+    </head>
+        <body> <!-- Aquí irá todo el contenido que el usuario podrá ver-->
+                <header>
+                    <nav>
+                        <ul class="nav-rigth-section">
+                            <li><a href="">Gmail</a></li>
+                            <li><a href="">Imágenes</a></li>
+                            <li class="menu-icon">
+                                <a href=""></a>
+                            </li>
+                            <li> <a href=""><img src= "https://lh3.googleusercontent.com/ogw/AF2bZygm17HnJAivO_TR7MqQzyaX7wxY1Vmf0_ZdwRWuKCRBG2E=s32-c-mo" alt=""></a></li>
+                        </ul>
+                    </nav>
     </header>
-</body>
+
+            <!-- Considerando el SEO, se usa main para lo que va después del header y antes de footer -->
+            <main>
+                <!-- Sección del logo -->
+                <section class="main-logo">
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="">
+                </section>
+                <!-- Sección del buscador -->
+                <section class="main-input">
+                    <div class="main-input-container">
+                        <!-- Logo de lupa -->
+                        <span class="search-icon"></span>
+                        <!-- Es donde el usuario escribirá lo que desea buscar -->
+                        <input type="text">
+                        <!-- En el micrófono se usa anchor para simular el comportamiento de un  enlace -->
+                        <a class="micro-icon" href=""></a>
+                    </div>
+                </section>
+                <!-- Sección de botones -->
+                <section class="main-buttons">
+                    <div><button>Buscar con Google</button></div>
+                    <div><button>Voy a tener suerte</button></div>
+                </section>
+            </main>
+        </body>
 </html>
+
