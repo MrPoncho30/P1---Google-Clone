@@ -1,27 +1,33 @@
 <!DOCTYPE html> <!--Esto le dice al navegador que estamos hablando de HTML5-->
-<html lang="en"> <!--Es el contenedor html -->
-<head> <!--Estructura no visible en el proyecto pero que se necesita en el navegador para 
-    manejar dependencias y ciertos metas importantes -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/main.css">
+<html lang="en"> <!--Es el contenedor html, idioma de la pag -->
+    <head> <!--Estructura no visible en el proyecto pero que se necesita en el navegador para 
+        manejar dependencias y ciertos metas importantes -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Google</title>
+        <link rel="icon" href="https://www.google.com/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/main.css">
+    
     </head>
         <body> <!-- Aquí irá todo el contenido que el usuario podrá ver-->
+            
                 <header>
                     <nav>
-                        <ul class="nav-rigth-section">
-                            <li><a href="">Gmail</a></li>
-                            <li><a href="">Imágenes</a></li>
+                        <ul class="nav-right-section">
+                            <li class="gmail">
+                                <a href="https://mail.google.com/mail/?authuser=0">Gmail</a>
+                            </li>
+                            <li class="photo">
+                                <a href="https://www.google.com/imghp?hl=es&authuser=0&ogbl">Imágenes</a>
+                            </li>
                             <li class="menu-icon">
                                 <a href=""></a>
                             </li>
-                            <li> <a href=""><img src= "https://lh3.googleusercontent.com/ogw/AF2bZygm17HnJAivO_TR7MqQzyaX7wxY1Vmf0_ZdwRWuKCRBG2E=s32-c-mo" alt=""></a></li>
+                            <li> <a href=""><img src= "https://lh3.googleusercontent.com/ogw/AF2bZyhtE6k9meaUrU0t0WqyRAcgPs3D0Q_U8rO0Ypn2TtmFU_c=s32-c-mo" alt=""></a></li>
                         </ul>
                     </nav>
-    </header>
+                </header>
 
-            <!-- Considerando el SEO, se usa main para lo que va después del header y antes de footer -->
             <main>
                 <!-- Sección del logo -->
                 <section class="main-logo">
@@ -30,20 +36,44 @@
                 <!-- Sección del buscador -->
                 <section class="main-input">
                     <div class="main-input-container">
+                        
                         <!-- Logo de lupa -->
                         <span class="search-icon"></span>
                         <!-- Es donde el usuario escribirá lo que desea buscar -->
                         <input type="text">
-                        <!-- En el micrófono se usa anchor para simular el comportamiento de un  enlace -->
+                        <!--Logo Micrófono-->
                         <a class="micro-icon" href=""></a>
+                        <a class="cam-icon" href=""></a>
                     </div>
                 </section>
                 <!-- Sección de botones -->
                 <section class="main-buttons">
-                    <div><button>Buscar con Google</button></div>
+                    <div><a href="https://www.google.com/search" target=""><button>Buscar con Google</button></a></div>
                     <div><button>Voy a tener suerte</button></div>
                 </section>
             </main>
+            <div class="centered"> <!-- Div para centrar el mensaje -->
+                <footer>Ofrecido por Google en: <a href="https://www.google.com/setprefs?sig=0_1ZmN6spQPtELRnLo8GPW6VuvrfA%3D&hl=es-419&source=homepage&sa=X&ved=0ahUKEwiipd_2rYGGAxWFJUQIHcvoCCMQ2ZgBCB8">Español (Latinoamérica)</a></footer> <!--Mensaje debajo del buscador-->
+            </div>
+
+            <footer>
+                <!-- Sección izquierda -->
+                <div class="footer-left">
+                    <a href="#">Sobre Google</a>
+                    <a href="#">Publicidad</a>
+                    <a href="#">Negocios</a>
+                    <a href="#">Cómo funciona la Búsqueda</a>
+                </div>
+                <!-- Sección derecha -->
+                <div class="footer-right">
+                    <a href="#">Privacidad</a>
+                    <a href="#">Condiciones</a>
+                    <a href="#">Preferencias</a>
+                </div>
+            </footer>
         </body>
+
+        
+ 
 </html>
 

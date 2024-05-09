@@ -4,6 +4,10 @@ body{
     nosotros lo manipulemos más adelante*/
     font-size: 13px;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff; /* Color blanco */
+    /*background-image: url('ruta_de_la_imagen.jpg'); /* Ruta de la imagen de fondo */
+    /*background-size: cover; /* Ajustar la imagen de fondo al tamaño de la ventana del navegador */
+    /*background-repeat: no-repeat; /* No repetir la imagen */
 }
 header{
     margin: 0; 
@@ -19,7 +23,7 @@ header nav{
     display: flex;
     justify-content: flex-end;
 }
-header nav .nav-rigth-section{
+header nav .nav-right-section{
     width: 250px;
     height: auto;
     display: flex;
@@ -35,20 +39,36 @@ a{
     text-decoration: none;
     cursor: pointer;
 }
+/*
+/* Estilos para la posición de los iconos 
+.icon-container a {
+    margin-left: 30px; /* Espacio entre iconos 
+}
+*/
+nav .nav-right-section .gmail{
+    margin-right: 10px;
+}
 
-nav .nav-right-section .menu-icon{
-    background-image: url("https://static.thenounproject.com/png/756729-200.png");
+nav .nav-right-section .photo{
+    margin-right: 10px;
+}
+
+nav .nav-right-section .menu-icon {
+    background-image: url("https://cdn-icons-png.flaticon.com/512/162/162740.png");
     background-repeat: no-repeat;
     background-position: center; 
     background-size: contain;
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+   }
+
+   nav .nav-right-section img{
+    border-radius: 50%;
+    margin-left: 19px;
+    margin-right: -16px;
 }
 
-nav .nav-right-section img{
-    border-radius: 70%;
-    margin-left: 10px;
-}
 
 main {
     margin-top: 150px;
@@ -96,7 +116,30 @@ main .main-input .search-icon {
     width: 18px;
     height: 18px;
     cursor: pointer; /*Se añade el cursor: pointer para que el cursor adopte la forma de la manita al colocarlo sobre el ícono.*/
+    margin-left: 15px;
 
+}
+
+main .main-input .micro-icon {
+    background-image: url('https://w7.pngwing.com/pngs/611/272/png-transparent-blue-red-and-yellow-google-voice-logo-microphone-google-voice-google-search-google-logo-microphone-angle-electronics-search-engine-optimization.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+   }
+
+main .main-input .cam-icon{
+    background-image: url('https://play-lh.googleusercontent.com/BDWTTN85mBETnnPg_qekwlk1uCxnbl4wtnVE8cz_WyMHEntEJgQsdJaT4uA0_N0VWg=w240-h480-rw');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 10px;
 }
 
 main .main-buttons {
@@ -123,4 +166,39 @@ main .main-buttons button {
     border: 1px solid #c6c6c6;
     box-shadow: 0 1px 1px #000001;
     color: #222;
+}            /* Estilos para centrar el mensaje */
+.centered {
+    text-align: center;
+    margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+}
+
+/* Estilos para el footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; /* Alinea los elementos a cada extremo */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+.footer-left, .footer-right {
+    display: flex;
+    align-items: center;
+}
+.footer-right {
+    margin-left: auto; /* Empuja la sección hacia la derecha */
+    margin-right: 45px;
+}
+.footer-left{
+    margin-left: 10px;
+}
+footer a {
+    color: #666;
+    text-decoration: none;
+    margin: 0 5px; /* Margen reducido */
+    white-space: nowrap; /* Evita el corte de texto */
+    font-size: 14px; /* Tamaño de texto ligeramente reducido */
 }
